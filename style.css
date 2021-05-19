@@ -27,16 +27,6 @@ body::-webkit-scrollbar {
     padding: 5px;
 }
 
-@media screen and (max-width: 600px) {
-    .header-wrapper {
-        flex-direction: column-reverse;
-    }
-
-    body::-webkit-scrollbar {
-        width: 2px;
-    }
-}
-
 dt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:larger;
@@ -93,7 +83,7 @@ td,th {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 64px auto;
+    margin: 5px auto;
 }
 
 .skills-wrapper {
@@ -104,11 +94,38 @@ td,th {
 }
 
 @media screen and (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    body::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .table-wrapper {
+        margin-top: -70px;
+        margin-left: -65px;
+    }
+
+    table {
+        transform: scaleX(0.7) scaleY(0.7);
+    }
+    
+    .skills {
+        margin-top: -50px;
+    }
+
     .skills-wrapper {
         display: grid;
         width: 70%;
         grid-template-columns: 100px 100px;
         grid-gap:  64px 128px;
+        margin-left: 40px;
+    }
+
+    img {
+        width: 64px;
+        height: 64px;
     }
 
     .mongodb {
@@ -122,6 +139,7 @@ td,th {
 }
 
 @media screen and (min-width: 600px) {
+
     .mongodb {
         grid-area: 3 / 2 / 4 / 3;
     }
