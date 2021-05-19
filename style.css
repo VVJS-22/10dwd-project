@@ -23,13 +23,13 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 24px;
     padding: 5px;
 }
 
 @media screen and (max-width: 600px) {
     .header-wrapper {
         flex-direction: column-reverse;
-        margin-top: 24px;
     }
 
     body::-webkit-scrollbar {
