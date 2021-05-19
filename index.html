@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+
+  <!---------------------- head ------------------------->
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,58 +11,91 @@
     <link rel="shortcut icon" href="/myprofile.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body style="background: green; color:white;">
+
+  <!--------------------- head ----------------------------->
+  
+  
+  <body>
+    
+    <!------------------- header --------------------------->
+
     <div class="header">
-      <h1 id="header">Hi, I am 
-      <span>Jayesh Sugumaran</span>
+      <div class="header-wrapper">
+        <div id="profile">
+          <dl>
+            <dt>
+              Don't be afraid,<br>
+              Relax, And do the Magic!
+            </dt>
+            <dd>
+              <h5>- JAYESH SUGUMARAN</h5>
+            </dd>
+          </dl>
+        </div>
+        <div id="profile-img"></div>
+      </div>
     </div>
-    <hr />
-    <img src="myprofile.jpg" alt="myimage" /><br>
-    <table>
-    <hr />
-    <blockquote>
-      Give introduction about yourself <br />
-      It should contain minimum 20 words!
-    </blockquote>
-    <hr />
-    <table>
-      <tr>
-        <th>Qualification</th>
-        <th>Institution</th>
-        <th>Year of Passing</th>
-        <th>Percentage/CGPA</th>
-      </tr>
-      <tr>
-        <td>BE/EEE</td>
-        <td>Government College of Engineering, Thanjavur.</td>
-        <td>2021-2022</td>
-        <td>7.38</td>
-      </tr>
-      <tr>
-        <td>HSC</td>
-        <td>Sengunthar Higher Secondary School,Erode.</td>
-        <td>2017-2018</td>
-        <td>86%</td>
-      </tr>
-      <tr>
-        <td>SSLC</td>
-        <td>Sengunthar Higher Secondary School,Erode.</td>
-        <td>2018-2016</td>
-        <td>96%</td>
-      </tr>
-    </table>
-    <hr />
-    <div id="github-link">
-      <a href="https://www.github.com/vvjs-22">Visit My GitHub Page</a>
+
+    <!------------------- header --------------------------->
+
+    <!-- ----------------- table ------------------------- -->
+
+    <div class="table-wrapper">
+      <table>
+        <caption><h1>Educational Qualification</h1></caption>
+        <tr>
+          <th>Qualification</th>
+          <th>Institution</th>
+          <th>Year of Passing</th>
+          <th>Board/ <br> University</th>
+          <th>Percentage/CGPA</th>
+        </tr>
+        <tr>
+          <td>BE/EEE</td>
+          <td>Government College of Engineering, Thanjavur.</td>
+          <td>2021-2022</td>
+          <td>Anna University</td>
+          <td>7.38</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Sengunthar Higher Secondary School,Erode.</td>
+          <td>2017-2018</td>
+          <td>State Board</td>
+          <td>86%</td>
+        </tr>
+        <tr>
+          <td>SSLC</td>
+          <td>Sengunthar Higher Secondary School,Erode.</td>
+          <td>2018-2016</td>
+          <td>State Board</td>
+          <td>96%</td>
+        </tr>
+      </table>
     </div>
-    <hr />
-    <address>
-      <h4>Address</h4>
-      21, <br />
-      Prasath Street, <br />
-      Periyavalasu 4 Road,<br />
-      Erode - 638004.
-    </address>
-    <hr />
+
+    <!-- ------------------- table ----------------------- -->
+
+    <!-- -------------------- skills --------------------- -->
+    <div class="skill-title">
+      <h1>My Skills</h1>
+    </div>
+    <div class="skills">
+      <div class="skills-wrapper">
+        <img src="/assets/html5.svg" alt="Html5">
+        <img src="/assets/css-3.svg" alt="CSS3">
+        <img src="/assets/bootstrap-4.svg" alt="Bootstrap">
+        <img src="/assets/logo-javascript.svg" alt="JavaScript">
+        <img src="/assets/typescript.svg" alt="TypeScript">
+        <img src="/assets/react.svg" alt="React">
+        <img src="/assets/nodejs.svg" alt="NodeJS">
+        <img src="/assets/expressjs-icon.svg" alt="ExpressJs">
+        <img class="mongodb" src="/assets/mongodb-icon.svg" alt="MongoDB">
+        <img class="python" src="/assets/python-5.svg" alt="Python">
+      </div>
+    </div>
+
+    <!-- ------------------- skills -------------------- -->
+    
   </body>
 </html>
