@@ -24,6 +24,13 @@ body::-webkit-scrollbar {
     padding: 5px;
 }
 
+@media screen and (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column-reverse;
+        margin-top: 24px;
+    }
+}
+
 dt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:larger;
