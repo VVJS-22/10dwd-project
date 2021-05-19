@@ -29,6 +29,10 @@ body::-webkit-scrollbar {
         flex-direction: column-reverse;
         margin-top: 24px;
     }
+
+    body::-webkit-scrollbar {
+        width: 2px;
+    }
 }
 
 dt {
