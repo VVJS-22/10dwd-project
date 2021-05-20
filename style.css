@@ -1,6 +1,12 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
+}
+
+
+body {
+    width: 100%;
     background: #252525;
     color:white;
     margin: 0;
@@ -8,6 +14,10 @@ body {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 body::-webkit-scrollbar {
@@ -23,8 +33,6 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 24px;
-    padding: 5px;
 }
 
 dt {
@@ -46,7 +54,6 @@ dt {
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    margin-top: 16px;
 }
 
 .table-wrapper::-webkit-scrollbar {
@@ -83,7 +90,6 @@ td,th {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 5px auto;
 }
 
 .skills-wrapper {
@@ -91,28 +97,26 @@ td,th {
     width: 70%;
     grid-template-columns: 100px 100px 100px 100px;
     grid-gap:  64px 128px;
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 600px) {
+
     .header-wrapper {
         flex-direction: column-reverse;
     }
+    
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
 
     body::-webkit-scrollbar {
-        width: 2px;
-    }
-
-    .table-wrapper {
-        margin-top: -70px;
-        margin-left: -65px;
-    }
-
-    table {
-        transform: scaleX(0.7) scaleY(0.7);
+        display: none;
     }
     
-    .skills {
-        margin-top: -50px;
+    .table-wrapper {
+        transform: scaleX(0.5) scaleY(0.5);
     }
 
     .skills-wrapper {
@@ -149,17 +153,6 @@ td,th {
     }
 }
 
-
-#github-link  {
-    text-align:center;
-}
-
-
-
-a {
-    text-decoration:none;
-    color:white;
-}
 
 
 
