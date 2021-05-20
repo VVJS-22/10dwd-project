@@ -62,6 +62,30 @@ dt {
 
 /* --------------------header------------------------------ */
 
+/* ----------------------contacts-------------------------- */
+
+.contacts {
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 52px;
+    background: white;
+    border-radius: 50px;
+    height: 60px;
+}
+
+.contacts div img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 28px;
+}
+
+/* ----------------------contacts-------------------------- */
+
+
+
 /* ----------------------table------------------------------ */
 
 .table-wrapper {
@@ -122,7 +146,7 @@ td,th {
 
 /* ----------------------for mobiles---------------------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
 
     .header-wrapper {
         flex-direction: column-reverse;
@@ -135,6 +159,11 @@ td,th {
 
     body::-webkit-scrollbar {
         display: none;
+    }
+
+    .contacts {
+        margin-bottom: 36px;
+        margin-top: 0px;
     }
     
     .table-wrapper {
@@ -154,7 +183,7 @@ td,th {
         margin-left: 40px;
     }
 
-    img {
+    .skills img {
         width: 64px;
         height: 64px;
     }
@@ -173,7 +202,7 @@ td,th {
 
 /* ----------------------except mobiles--------------------- */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 770px) {
 
     .mongodb {
         grid-area: 3 / 2 / 4 / 3;
