@@ -29,8 +29,8 @@ function changeMode() {
     profileImg.classList.toggle("dark-profile-img");
     table.classList.toggle("dark-table");
     table.classList.toggle("light-table");
-    th.classList.toggle("dark-th");
-    th.classList.toggle("light-th");
+    th.classList.toggle("dark-toggle");
+    th.classList.toggle("light-toggle");
 
 }
 

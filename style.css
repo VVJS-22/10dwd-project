@@ -11,14 +11,11 @@
 
 /* -------------------modeChange------------- */
 
+/* ---------------------light mode------------------ */
+
 .light-body {
     color: #252525;
     background: white;
-}
-
-.dark-body  {
-    color: white;
-    background: #252525;
 }
 
 .light-toggle {
@@ -26,13 +23,26 @@
     background: #252525;
 }
 
+.light-profile-img {
+    border: 3px solid #e2d7d7;
+}
+
+.light-table {
+    border: 1px solid #000000;
+}
+
+/* ------------------light mode------------------- */
+
+/* -------------------dark mode------------------- */
+
+.dark-body  {
+    color: white;
+    background: #252525;
+}
+
 .dark-toggle {
     color: #252525;
     background: white;
-}
-
-.light-profile-img {
-    border: 3px solid #e2d7d7;
 }
 
 .dark-profile-img {
@@ -43,19 +53,9 @@
     border: 1px solid white;
 }
 
-.light-table {
-    border: 1px solid #000000;
-}
+/* -----------------dark mode-------------------- */
 
-.dark-th {
-    color: #252525;
-    background: white;
-}
 
-.light-th {
-    background: #252525;
-    color: white;
-}
 
 /* -------------------modeChange------------- */
 
