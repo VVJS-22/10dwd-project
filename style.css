@@ -9,13 +9,61 @@
 
 /* -------------------whole elem------------------------ */
 
+/* -------------------modeChange------------- */
+
+.light-body {
+    color: #252525;
+    background: white;
+}
+
+.dark-body  {
+    color: white;
+    background: #252525;
+}
+
+.light-toggle {
+    color: white;
+    background: #252525;
+}
+
+.dark-toggle {
+    color: #252525;
+    background: white;
+}
+
+.light-profile-img {
+    border: 3px solid #e2d7d7;
+}
+
+.dark-profile-img {
+    border: 3px solid #585858;
+}
+
+.dark-table {
+    border: 1px solid white;
+}
+
+.light-table {
+    border: 1px solid #000000;
+}
+
+.dark-th {
+    color: #252525;
+    background: white;
+}
+
+.light-th {
+    background: #252525;
+    color: white;
+}
+
+/* -------------------modeChange------------- */
+
 
 /* ---------------------body--------------------------- */
 
 body {
     width: 100%;
-    background: #252525;
-    color:white;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -26,6 +74,17 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+#mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: bolder;
+    border: none;
+}
+
 
 body::-webkit-scrollbar {
     width: 12px;
@@ -57,14 +116,14 @@ dt {
     background: url("./myprofile.jpg") no-repeat;
     background-size: 400px 400px;
     background-position-x: -30px;
-    border: 3px solid #585858;
+    /* border: 3px solid #585858; */
 }
 
 /* --------------------header------------------------------ */
 
 /* ----------------------contacts-------------------------- */
 
-.contacts {
+#contacts {
     margin: 10px;
     width: 80%;
     display: flex;
@@ -76,7 +135,7 @@ dt {
     height: 60px;
 }
 
-.contacts div img {
+#contacts div img {
     width: 36px;
     height: 36px;
     margin-bottom: 28px;
@@ -106,17 +165,14 @@ table {
     width:70%;
     text-align:center;
     margin: 0 auto;
-    border:1px solid white;
+    /* border:1px solid white; */
     border-collapse: collapse;
 }
 
-tr:nth-child(1) {
-    color: #252525;
-    background: white;
-}
 
 td,th {
     padding: 16px;
+    font-weight: 600;
 }
 
 /* ----------------------table------------------------- */
@@ -144,7 +200,7 @@ td,th {
 
 /* ----------------------skills------------------------- */
 
-/* ----------------------for tablets---------------------- */
+/* ----------------------for tablets,mobiles---------------------- */
 
 @media screen and (max-width: 770px) {
 
@@ -198,9 +254,9 @@ td,th {
     
 }
 
-/* -----------------------for tablets----------------------- */
+/* -----------------------for tablets,mobiles----------------------- */
 
-/* ----------------------except tablets--------------------- */
+/* ----------------------except tablets,mobiles--------------------- */
 
 @media screen and (min-width: 770px) {
 
@@ -213,7 +269,7 @@ td,th {
     }
 }
 
-/* --------------------except tablets----------------------- */
+/* --------------------except tablets,mobiles----------------------- */
 
 
 

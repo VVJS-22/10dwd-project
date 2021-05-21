@@ -14,8 +14,9 @@
 
   <!--------------------- head ----------------------------->
   
+  <button id="mode-toggle" class="dark-toggle" onclick="changeMode()">Light</button>
   
-  <body>
+  <body id="body" class="dark-body">
     
     <!------------------- header --------------------------->
     <div class="header">
@@ -31,14 +32,14 @@
             </dd>
           </dl>
         </div>
-        <div id="profile-img"></div>
+        <div id="profile-img" class="dark-profile-img"></div>
       </div>
     </div>
 
     <!------------------- header --------------------------->
     
     <!-- -----------------contact------------------------ -->
-    <div class="contacts">
+    <div id="contacts">
       <div>
         <a href="mailto:s.jayeshchennai@gmail.com?subject=From%20your%20website" target="_blank" rel="noopener noreferrer">
           <img src="./assets/gmail.svg" alt="gmail" />
@@ -69,9 +70,9 @@
     <!-- ----------------- table ------------------------- -->
 
     <div class="table-wrapper">
-      <table>
+      <table id="table" class="dark-table">
         <caption><h1>Educational Qualification</h1></caption>
-        <tr>
+        <tr id="th" class="dark-th">
           <th>Qualification</th>
           <th>Institution</th>
           <th>Year of Passing</th>
@@ -125,5 +126,6 @@
     </div>
 
     <!-- ------------------- skills -------------------- -->
+    <script src="script.js"></script>
   </body>
 </html>
